@@ -1,11 +1,16 @@
-import { View, Text } from "react-native";
+import FloatButton from "@/src/components/FloatButton";
+import { View } from "react-native";
+import styles from "./styles";
 
 export default function Outcome(){
+
+    const handleFloatButton = () => {
+        console.log("Teste")
+    }
+    
     return (
-        <View>
-            <Text>
-                sdfsdfa
-            </Text>
+        <View style={styles.container} >
+            <FloatButton onPress={handleFloatButton} />
         </View>
     );
 }

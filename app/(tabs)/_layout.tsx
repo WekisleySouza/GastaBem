@@ -30,9 +30,6 @@ export default function TabLayout() {
         <Tabs.Screen name='home'
           options={{
             tabBarIcon: ({ focused }) => <Home_icon height={30} width={30} color={focused ? colors.color6 : colors.color1}/>,
-            tabBarStyle: {
-              gap: 2
-            }
           }}
         />
         <Tabs.Screen name='outcome'
