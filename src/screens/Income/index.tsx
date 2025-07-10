@@ -2,6 +2,7 @@ import FloatButton from "@/src/components/FloatButton";
 import { View } from "react-native";
 import styles from "./styles";
 import ItemComponent from "@/src/components/ItemComponent";
+import DateLine from "@/src/components/DateLine";
 
 
 export default function Income(){
@@ -16,6 +17,7 @@ export default function Income(){
     
     return (
         <View style={styles.container} >
+            <DateLine dateString="12 de março" />
             <ItemComponent onPress={handleClickItem} />
             <FloatButton onPress={handleFloatButton} />
         </View>

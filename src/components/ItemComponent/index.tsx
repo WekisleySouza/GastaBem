@@ -1,14 +1,23 @@
 import { Text, TouchableOpacity, View } from "react-native";
 import styles from "./styles";
 
-import Pork_icon from "@/src/assets/icons/pork_icon.svg"
+import Pork_icon from "@/src/assets/icons/pork_icon.svg";
 import colors from "@/src/constants/colors";
 
 type ItemProps = {
-    onPress: () => void
+    name: string,
+    category: string,
+    price: number,
+    onPress: () => void,
 }
 
-export default function ItemComponent({ onPress } : ItemProps){
+export default function ItemComponent({ onPress, name, category, price } : ItemProps){
+
+    const formatPrice = (receivedPrice: number) => {
+
+        return receivedPrice
+    }
+
     return (
         <TouchableOpacity style={styles.container_shadow} onPress={onPress} >
             <View style={styles.container} >
@@ -20,18 +29,18 @@ export default function ItemComponent({ onPress } : ItemProps){
                 <View style={styles.infoContainer} >
                     <View style={styles.nameContainer} >
                         <Text style={styles.nameText} >
-                            Aspirina
+                            {name}
                         </Text>
                     </View>
                     <View style={styles.infoCategoryContainer} >
                         <View style={styles.categoryContainer} >
                             <Text style={styles.infoText} >
-                                Saúde
+                                {category}
                             </Text>
                         </View>
                         <View style={styles.priceContainer} >
                             <Text style={styles.infoText} >
-                                Total: 255.25
+                                Total: {formatPrice(price)}
                             </Text>
                         </View>
                     </View>

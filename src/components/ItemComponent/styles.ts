@@ -9,6 +9,7 @@ export default StyleSheet.create({
         borderRadius: 10,
         justifyContent: "center",
         alignItems: "center",
+        marginBottom: 15
     },
     container: {
         backgroundColor: colors.color5,
