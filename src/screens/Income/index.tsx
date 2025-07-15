@@ -1,9 +1,8 @@
 import FloatButton from "@/src/components/FloatButton";
+import PrincipalItemsList from "@/src/components/PrincipalItemsList";
+import { expenses } from '@/src/mock/expenses';
 import { View } from "react-native";
 import styles from "./styles";
-import ItemComponent from "@/src/components/ItemComponent";
-import DateLine from "@/src/components/DateLine";
-
 
 export default function Income(){
 
@@ -17,8 +16,10 @@ export default function Income(){
     
     return (
         <View style={styles.container} >
-            <DateLine dateString="12 de março" />
-            <ItemComponent onPress={handleClickItem} />
+            <PrincipalItemsList
+                itemList={expenses}
+                onPress={handleClickItem}
+            />
             <FloatButton onPress={handleFloatButton} />
         </View>
     );

@@ -1,8 +1,8 @@
 import FloatButton from "@/src/components/FloatButton";
+import PrincipalItemsList from "@/src/components/PrincipalItemsList";
+import { expenses } from "@/src/mock/expenses";
 import { View } from "react-native";
 import styles from "./styles";
-import expenses from "@/src/mock/expenses";
-import PrincipalItemsList from "@/src/components/PrincipalItemsList";
 
 export default function Outcome(){
 

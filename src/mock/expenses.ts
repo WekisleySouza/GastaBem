@@ -5,7 +5,7 @@ type Expense = {
   date: string; // ISO format (YYYY-MM-DD)
 };
 
-const itemList: Expense[] = [
+const expenses: Expense[] = [
   { name: "Supermercado Pão de Açúcar", date: "2025-07-01", price: 120.50, category: "Alimentação" },
   { name: "Uber para o trabalho", date: "2025-07-01", price: 18.75, category: "Transporte" },
   { name: "Farmácia Drogasil", date: "2025-07-01", price: 45.00, category: "Saúde" },
@@ -51,4 +51,6 @@ const itemList: Expense[] = [
   { name: "Ônibus urbano", date: "2025-07-15", price: 4.40, category: "Transporte" },
 ];
 
-export default itemList;
+export {
+  expenses
+};
